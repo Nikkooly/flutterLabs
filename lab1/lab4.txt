@@ -1,0 +1,50 @@
+BottomNavigationBar(
+          unselectedFontSize: 0,
+          selectedFontSize: 0,
+          currentIndex: _currentIndex,
+          onTap: (value){
+            _currentIndex=value;
+            setState(() {
+
+            });
+          },
+          backgroundColor: Colors.white,
+          selectedItemColor: Colors.grey,
+          unselectedItemColor: Colors.grey,
+          iconSize: (27),
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text("")
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.search),
+                title: Text("")
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.shopping_cart),
+                title: Text("")
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person_outline),
+                title: Text("")
+            )
+          ]
+        ),
+        ImageSliderWidget(
+
+        ),
+        Container(
+          color: Colors.grey,
+          child: Text('New collection',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+            fontSize: 17),
+          ),
+          margin: EdgeInsets.only(
+            top: kToolbarHeight
+          ),
+          width: 200,
+          height: 350,
+        ),
